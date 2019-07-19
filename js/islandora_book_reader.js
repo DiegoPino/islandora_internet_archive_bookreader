@@ -964,8 +964,7 @@ IslandoraBookReader.prototype.blankFulltextDiv = function() {
        finishedDiv[0].setAttribute('onclick', "parent.jQuery.colorbox.close();");
      }
      // No embed for us.
-     jShareDiv.remove("fieldset.fieldset-embed");
-     
+     jShareDiv.find('fieldset.fieldset-embed').remove();
    }
 
 })(jQuery);
